@@ -25,7 +25,7 @@ SECRET_KEY = '6y&gl4_t398r9^5h3$9036rjls!owtuvd#iavtf7im4kyr#aej'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['image-crawler-app.herokuapp.com', '127.0.0.1:8000']
 
 
 # Application definition
@@ -128,3 +128,5 @@ CORS_URLS_REGEX = r'^/api/.*$'
 CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_COOKIE_SECURE = False
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
