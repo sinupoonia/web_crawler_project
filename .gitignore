@@ -6,3 +6,5 @@ dbs
 *.egg-info
 dist
 build
+.idea
+images
